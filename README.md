@@ -24,7 +24,7 @@ Ui Design With listing
 
 <img alt="Screen Shot 2020-09-17 at 3 35 48 PM" src="https://github.com/Sweetyrawat-star/football_match/assets/57385799/fd2b5f5f-cee6-424c-a3be-c37d7733a784.png">
 
-Apk Link valid to 7 days : https://i.diawi.com/krAkd
+Apk Link valid to 7 days : https://i.diawi.com/eLG5s9
 
 ### Application structure
 After successful build, your application structure should look like this:
