@@ -39,26 +39,30 @@ class DetailStatsTabContainerScreenState
     return SafeArea(
       child: Scaffold(
         backgroundColor: appTheme.whiteA700,
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
+        body: ListView(
           children: [
-            _buildMatchDetails(context),
-            SizedBox(height: 34.v),
-            _buildTabview(context),
-            SizedBox(
-              height: 554.v,
-              child: TabBarView(
-                controller: tabController,
-                children: [
-                  DetailStatsPage(),
-                  DetailStatsPage(),
-                  DetailStatsPage(),
-                  DetailStatsPage(),
-                  DetailStatsPage(),
-                  DetailStatsPage(),
-                ],
-              ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _buildMatchDetails(context),
+                SizedBox(height: 34.v),
+                _buildTabview(context),
+                SizedBox(
+                  height: 554.v,
+                  child: TabBarView(
+                    controller: tabController,
+                    children: [
+                      DetailStatsPage(),
+                      DetailStatsPage(),
+                      DetailStatsPage(),
+                      DetailStatsPage(),
+                      DetailStatsPage(),
+                      DetailStatsPage(),
+                    ],
+                  ),
+                ),
+              ],
             ),
           ],
         ),

@@ -92,7 +92,7 @@ class HomeScreen extends StatelessWidget {
   /// Section Widget
   Widget _buildTwentyStack(BuildContext context) {
     return SizedBox(
-      height: 310.v,
+      height: MediaQuery.of(context).size.height*0.37,
       child: Stack(
         fit: StackFit.loose,
         clipBehavior: Clip.hardEdge,
@@ -100,7 +100,7 @@ class HomeScreen extends StatelessWidget {
           Align(
             alignment: Alignment.topCenter,
             child: Container(
-              height: 250,
+              height: MediaQuery.of(context).size.height* 0.27,
               padding: EdgeInsets.symmetric(
                 horizontal: 21.h,
                 vertical: 14.v,
@@ -108,66 +108,63 @@ class HomeScreen extends StatelessWidget {
               decoration: AppDecoration.fillBlue.copyWith(
                 borderRadius: BorderRadiusStyle.customBorderBL50,
               ),
-              child:  new Expanded(
-                child: TextField(
-                  onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=> SearchScreen()));
-                  },
-                  keyboardType: TextInputType.text,
-                  decoration: InputDecoration(
-                    hintText: "Search Matches, League ...",
-                    filled: true,
-                    hintStyle: CustomTextStyles.titleMediumBluegray300,
-                    prefixIcon: Container(
-                      margin: EdgeInsets.fromLTRB(16.h, 17.v, 8.h, 17.v),
-                      child: CustomImageView(
-                        imagePath: ImageConstant.imgIconSearch,
-                        height: 18.adaptSize,
-                        width: 18.adaptSize,
-                      ),
-                    ),
-                    prefixIconConstraints: BoxConstraints(
-                      maxHeight: 52.v,
-                    ),
-                    suffixIcon: Container(
-                      margin: EdgeInsets.fromLTRB(30.h, 17.v, 17.h, 17.v),
-                      child: CustomImageView(
-                        imagePath: ImageConstant.imgSettings,
-                        height: 18.v,
-                        width: 26.h,
-                      ),
-                    ),
-                    suffixIconConstraints: BoxConstraints(
-                      maxHeight: 52.v,
-                    ),
-                    isDense: true,
-                    contentPadding: EdgeInsets.symmetric(vertical: 17.v),
-                    fillColor: appTheme.gray50,
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(24.h),
-                      borderSide: BorderSide.none,
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(24.h),
-                      borderSide: BorderSide.none,
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(24.h),
-                      borderSide: BorderSide(
-                        color: appTheme.blue80001,
-                        width: 1,
-                      ),
+              child: TextField(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> SearchScreen()));
+                },
+                keyboardType: TextInputType.text,
+                decoration: InputDecoration(
+                  hintText: "Search Matches, League ...",
+                  filled: true,
+                  hintStyle: CustomTextStyles.titleMediumBluegray300,
+                  prefixIcon: Container(
+                    margin: EdgeInsets.fromLTRB(16.h, 17.v, 8.h, 17.v),
+                    child: CustomImageView(
+                      imagePath: ImageConstant.imgIconSearch,
+                      height: 18.adaptSize,
+                      width: 18.adaptSize,
                     ),
                   ),
-                  style: TextStyle(
-                    fontSize: 14.0,
-                    color: Colors.black,
+                  prefixIconConstraints: BoxConstraints(
+                    maxHeight: 52.v,
+                  ),
+                  suffixIcon: Container(
+                    margin: EdgeInsets.fromLTRB(30.h, 17.v, 17.h, 17.v),
+                    child: CustomImageView(
+                      imagePath: ImageConstant.imgSettings,
+                      height: 18.v,
+                      width: 26.h,
+                    ),
+                  ),
+                  suffixIconConstraints: BoxConstraints(
+                    maxHeight: 52.v,
+                  ),
+                  isDense: true,
+                  contentPadding: EdgeInsets.symmetric(vertical: 17.v),
+                  fillColor: appTheme.gray50,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(24.h),
+                    borderSide: BorderSide.none,
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(24.h),
+                    borderSide: BorderSide.none,
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(24.h),
+                    borderSide: BorderSide(
+                      color: appTheme.blue80001,
+                      width: 1,
+                    ),
                   ),
                 ),
-              )
+                style: TextStyle(
+                  fontSize: 14.0,
+                  color: Colors.black,
+                ),
+              ),
             ),
           ),
-
           Positioned(
             top: 120,left: 30,
             child: SizedBox(
@@ -253,6 +250,7 @@ class HomeScreen extends StatelessWidget {
       ),
     );
   }
+
 
   /// Section Widget
   Widget _buildOngoingUpcomingChipView(BuildContext context) {
@@ -399,7 +397,7 @@ class HomeScreen extends StatelessWidget {
               ),
               SizedBox(width: 10,),
               CircleAvatar(
-                radius: 15,
+                radius: 12,
                 backgroundColor: appTheme.blue80001,
                 child: CustomImageView(
                   imagePath: ImageConstant.imgVideo,

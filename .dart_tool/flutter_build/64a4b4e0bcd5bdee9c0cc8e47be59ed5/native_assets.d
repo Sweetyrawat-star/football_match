@@ -1,0 +1,1 @@
+ /Users/sweetyrawat/Desktop/github\ uploaded/football_match/.dart_tool/flutter_build/64a4b4e0bcd5bdee9c0cc8e47be59ed5/native_assets.yaml: 

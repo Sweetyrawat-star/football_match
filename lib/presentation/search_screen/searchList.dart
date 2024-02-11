@@ -38,11 +38,13 @@ class _SearchListState extends State<SearchList> {
     {'text': 'Germany', 'starValue': ' true'},
     {'text': 'Netherlands ', 'starValue': 'true'},
     {'text': 'Spain', 'starValue': 'true'},
+    
   ];
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
       shrinkWrap: true,
+      physics: NeverScrollableScrollPhysics(),
       itemBuilder: (context,index){
       return GestureDetector(
         onTap: (){
