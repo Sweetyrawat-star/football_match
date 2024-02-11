@@ -1,28 +1,30 @@
 
 # football_match_live
-### Table of contents
-- [System requirements](#system-requirements)
-- [Figma design guidelines for better UI accuracy](#figma-design-guideline-for-better-accuracy)
-- [Check the UI of the entire app](#app-navigations)
-- [Application structure](#project-structure)
-- [How to format your code?](#how-you-can-do-code-formatting)
-- [How you can improve code readability?](#how-you-can-improve-the-readability-of-code)
-- [Libraries and tools used](#libraries-and-tools-used)
-- [Support](#support)
+
 
 ### System requirements
 
 Dart SDK Version 2.18.0 or greater.
 Flutter SDK Version 3.3.0 or greater.
 
-### Figma design guidelines for better UI accuracy
+##Task 
+Ui Design With listing
 
-Read our guidelines to increase the accuracy of design-to-code conversion by optimizing Figma designs.
-https://docs.dhiwise.com/docs/Designguidelines/intro
 
-### Check the UI of the entire app
 
-Check the UI of all the app screens from a single place by setting up the 'initialRoute'  to AppNavigation in the AppRoutes.dart file.
+#ScreenShot of App
+
+
+
+
+|  Live Foot Match Ui                                            |                                                                             
+ <img width alt="Screen Shot 2020-09-17 at 3 26 13 PM" src="https://github.com/Sweetyrawat-star/football_match/assets/57385799/8676ef11-745d-4baa-b53d-5f342b26980c.png">
+
+<img alt="Screen Shot 2020-09-17 at 3 35 48 PM" src="https://github.com/Sweetyrawat-star/football_match/assets/57385799/6d0227aa-d254-4ea2-b53f-ec4352805508.png">
+
+<img alt="Screen Shot 2020-09-17 at 3 35 48 PM" src="https://github.com/Sweetyrawat-star/football_match/assets/57385799/fd2b5f5f-cee6-424c-a3be-c37d7733a784.png">
+
+Apk Link valid to 7 days : https://i.diawi.com/krAkd
 
 ### Application structure
 After successful build, your application structure should look like this:
@@ -42,18 +44,4 @@ After successful build, your application structure should look like this:
     ├── routes                      - It contains all the routes of the application
     └── theme                       - It contains app theme and decoration classes
     └── widgets                     - It contains all custom widget classes
-```
-### How to format your code?
 
-- if your code is not formatted then run following command in your terminal to format code
-  ```
-  dart format .
-  ```
-
-### How you can improve code readability?
-
-Resolve the errors and warnings that are shown in the application.
-
-### Support
-
-If you have any problems or questions, go to our Discord channel, where we will help you as quickly as possible: https://discord.com/invite/rFMnCG5MZ7
