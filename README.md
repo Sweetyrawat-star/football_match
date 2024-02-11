@@ -7,6 +7,21 @@
 Dart SDK Version 2.18.0 or greater.
 Flutter SDK Version 3.3.0 or greater.
 
+##Task 
+Ui Design With listing
+
+
+
+#ScreenShot of App
+
+
+
+|  Live Foot Match Ui                                            |                                                                             
+ <img width alt="Screen Shot 2020-09-17 at 3 26 13 PM" src="https://github.com/Sweetyrawat-star/football_match/assets/57385799/8676ef11-745d-4baa-b53d-5f342b26980c.png">
+
+<img alt="Screen Shot 2020-09-17 at 3 35 48 PM" src="https://github.com/Sweetyrawat-star/football_match/assets/57385799/6d0227aa-d254-4ea2-b53f-ec4352805508.png">
+<img alt="Screen Shot 2020-09-17 at 3 35 48 PM" src="https://github.com/Sweetyrawat-star/football_match/assets/57385799/6d0227aa-d254-4ea2-b53f-ec4352805508.png">
+
 ### Application structure
 After successful build, your application structure should look like this:
                     
